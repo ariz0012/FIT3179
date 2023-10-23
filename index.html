@@ -1,17 +1,18 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first HTML Document</title>
+  <meta charset="utf-8">
+  <title>Vega-Lite Visualization</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 <body>
-    <h1>Heading 1</h1>
-    <p>My First Paragraph.</p>
+  <div id="vis_1"></div>
 
-    <div class="row graphic">
-            <div id="vis_1"></div>
-        </div>
-    
+  <script>
+    // Load and render the Vega-Lite specification
+    const spec = { /* Your Vega-Lite specification here */ };
+    vegaEmbed('#vis', spec);
+  </script>
 </body>
 </html>
